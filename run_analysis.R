@@ -73,7 +73,7 @@ TidyData    = aggregate(AllDataConmined1[,names(AllDataConmined1) != c('activity
 TidyData    = merge(TidyData,ActivityType,by='activityId',all.x=TRUE);
 
 #Export the tidyData file
-write.table(TidyData, "TidyData.txt",row.names=TRUE,sep='\t')
+write.table(TidyData, "TidyData.txt",row.names=FALSE,sep='\t')
 
 
 
